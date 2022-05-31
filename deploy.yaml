@@ -1,5 +1,8 @@
 ---
 - hosts: "all"
+  vars:
+    - htmldir: /var/www/html
+    - gitrepo: https://github.com/Jaibw/FrozenYogurtShop.git
   tasks:
     - name: install nginx
       become: yes
